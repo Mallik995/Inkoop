@@ -2,25 +2,165 @@
     margin: 0;
     box-sizing: border-box;
     padding: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+           
 }
 
 div{
-    border: 1px solid red;
+    
     border-radius: 10px;
     margin: 5px;
     padding: auto;
 }
 
 .mainDiv{
+    margin: 20px; 
+    padding:100px;
     display:flex;    
     flex-flow: column;
-    
+    /* width: 1200px;     */
+    justify-content:center;  
+    border: 1px solid black ;  
 }
+
+/* .midDiv+img{
+    position: absolute;
+    z-index: -1;
+    width: 500px;    
+} */
+
+.midZindex{    
+    /* display:flex;
+    flex-flow: column;     */
+    position: absolute;
+    z-index: -1;
+    width: 500px;  
+    text-align: center;
+    height: 50%;
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.midDivText{
+    position: relative;
+    left: 900px;
+    top: 50px;    
+    padding: 10px;
+    background-color: white;
+    border: none;
+    height: 300px;
+    width: 500px;
+    border: 1px dotted grey;
+}
+
+.socialmediaIconsDiv{
+    background-color: none;
+    position:relative;
+    left: 900px;
+    display: flex;
+    justify-content:center;    
+    width: 400px;
+}
+
+#specialFont{
+    color: #396EB0;
+    font-family: Arial;
+}
+
 .navDiv{
     display:flex;
     justify-content:space-between;
+    align-items:center;   
+}
+
+.conntentSpan{
+    margin: 50px 0px; 
+    display:flex;
+    flex-flow: column;
+     justify-content:center; 
     align-items:center;
-   
-    
+}
+
+.conntentSpan p{
+    color: gray;
+}
+
+#numbSpam{
+    color:#396EB0;
+
+}
+#btn{
+background-color: #396EB0;
+padding: 15px;
+color:white;
+border: none;
+border-radius: 10px;
+width: 150px;
+}
+
+.midDiv{
+    display:flex; 
+}
+
+.midDiv + img{
+    width: 850px;
     
 }
+
+
+i{
+    padding:20px;
+}
+
+.bottomDiv{
+    margin-top:50px;
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+    background-color: #2E4C6D;
+    align-items: center;
+    color:white;
+}
+.bottomDivInner{
+    display:flex;   
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap: wrap;
+}
+.btmDivInnImghldr{
+    display:flex;   
+    justify-content:space-around;
+    flex-flow: column;
+    align-items:center;
+    color:white;
+}
+.btmDivInnImghldr img{
+width: 60px;
+border-radius: 50%;
+}
+p{
+    background-color:none;
+    color:white;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+   
+    div.navDivMobile {
+      display: visible;
+
+      
+    }
+    div.navDiv
+    {
+        display: none;
+    }
+  }
+
+  div.navDivMobile {
+    display: none;
+
+    
+  }
